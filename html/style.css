@@ -1,0 +1,46 @@
+:root {
+    --spaceblue: #212999;
+    --flamered: #ad2626;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url("https://raw.githubusercontent.com/josephrhobbs/computer-modern/master/cmunbi.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url("https://raw.githubusercontent.com/josephrhobbs/computer-modern/master/cmunbx.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url("https://raw.githubusercontent.com/josephrhobbs/computer-modern/master/cmunti.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url("https://raw.githubusercontent.com/josephrhobbs/computer-modern/master/cmunrm.ttf");
+}
+
+@media screen and (min-device-width: 768px) {
+    /* For desktop */
+        
+    body {
+        font-family: "Computer Modern", serif;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    /* For mobile */
+    
+    body {
+        font-family: "Computer Modern", serif;
+        font-size: 24px;
+    }
+}

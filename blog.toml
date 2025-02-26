@@ -1,5 +1,6 @@
 [site]
 name = "Educational Website"
+style = "book"
 
 [media]
 include = []
