@@ -55,6 +55,11 @@
         text-align: justify;
     }
 
+    p a {
+        text-decoration: none;
+        color: var(--flamered);
+    }
+
     div.menu {
         display: flex;
         margin-top: 20px;
@@ -105,6 +110,11 @@
         text-align: justify;
     }
 
+    p a {
+        text-decoration: none;
+        color: var(--flamered);
+    }
+
     div.menu {
         display: flex;
         margin-top: 20px;
@@ -147,6 +157,11 @@
         text-indent: 36px;
         line-height: 36px;
         text-align: justify;
+    }
+
+    p a {
+        text-decoration: none;
+        color: var(--flamered);
     }
 
     div.menu {
