@@ -2,5 +2,9 @@
 name = "Educational Website"
 style = "book"
 
+[menu]
+names = ["Home", "About", "Courses"]
+links = ["/", "/about", "/courses"]
+
 [media]
 include = []
