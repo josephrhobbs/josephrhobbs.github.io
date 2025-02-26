@@ -32,6 +32,19 @@
         
     body {
         font-family: "Computer Modern", serif;
+        margin: 96px 192px 96px 192px;
+    }
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 24px;
+        text-indent: 48px;
+        line-height: 48px;
+        text-align: justify;
     }
 }
 
@@ -40,6 +53,19 @@
     
     body {
         font-family: "Computer Modern", serif;
+        margin: 96px;
+    }
+
+    h1 {
+        font-size: 72px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 30px;
+        text-indent: 48px;
+        line-height: 72px;
+        text-align: justify;
     }
 }
 
@@ -48,5 +74,18 @@
     
     body {
         font-family: "Computer Modern", serif;
+        margin: 96px 192px 96px 192px;
+    }
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 24px;
+        text-indent: 48px;
+        line-height: 48px;
+        text-align: justify;
     }
 }
