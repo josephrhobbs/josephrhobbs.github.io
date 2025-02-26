@@ -32,7 +32,6 @@
         
     body {
         font-family: "Computer Modern", serif;
-        font-size: 24px;
     }
 }
 
@@ -41,6 +40,13 @@
     
     body {
         font-family: "Computer Modern", serif;
-        font-size: 24px;
+    }
+}
+
+@media print {
+    /* For print */
+    
+    body {
+        font-family: "Computer Modern", serif;
     }
 }
