@@ -2,4 +2,4 @@
 
 ~
 
-[Lesson 1](/courses/calculus/1)
+[Lesson 1: What is a Derivative?](/courses/calculus/1)
