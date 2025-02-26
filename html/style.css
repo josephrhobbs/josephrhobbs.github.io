@@ -74,18 +74,18 @@
     
     body {
         font-family: "Computer Modern", serif;
-        margin: 96px 192px 96px 192px;
+        margin: 48px;
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 32px;
         text-align: center;
     }
 
     p {
-        font-size: 24px;
-        text-indent: 48px;
-        line-height: 48px;
+        font-size: 18px;
+        text-indent: 36px;
+        line-height: 36px;
         text-align: justify;
     }
 }
