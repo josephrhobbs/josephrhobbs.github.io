@@ -59,14 +59,13 @@
         margin: 8px 20px;
         padding: 8px;
         text-decoration: none;
-        color: black;
-        transition: 0.4s;
+        color: var(--flamered);
     }
 
     div.menu a:hover {
-        color: var(--flamered);
-        border-bottom: 2px solid var(--flamered);
-        transition: 0.4s;
+        margin: 6px 20px;
+        color: black;
+        border-bottom: 2px solid black;
     }
 }
 
@@ -102,8 +101,7 @@
         margin: 8px 20px;
         padding: 8px;
         text-decoration: none;
-        color: black;
-        transition: 0.4s;
+        color: var(--flamered);
     }
 }
 
