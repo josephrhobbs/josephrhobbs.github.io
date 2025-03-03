@@ -140,14 +140,20 @@
         font-family: "Lexend", sans-serif;
         font-size: 72px;
         text-align: center;
+        background-color: var(--flamered);
+        color: white;
+        margin: 0px;
+        padding: 48px 0px 0px 0px;
     }
 
     h2 {
+        margin: 12px 48px 12px 48px;
         font-family: "Lexend", sans-serif;
         font-size: 60px;
     }
 
     h3 {
+        margin: 12px 48px 12px 48px;
         font-family: "Lexend", sans-serif;
         font-size: 48px;
     }
@@ -171,6 +177,7 @@
         margin-bottom: 20px;
         justify-content: center;
         font-size: 42px;
+        background-color: var(--flamered);
     }
 
     div.menu a {
@@ -178,6 +185,7 @@
         padding: 8px;
         text-decoration: none;
         color: var(--flamered);
+        background-color: white;
     }
 }
 
