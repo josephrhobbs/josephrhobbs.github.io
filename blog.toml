@@ -3,11 +3,13 @@ name = "Educational Website"
 style = "book"
 
 [menu]
-names = ["Home", "About", "Subjects"]
-links = ["/", "/about", "/subjects"]
+names = ["Home", "About", "Subjects", "Blog", "Contact"]
+links = ["/", "/about", "/subjects", "/blog", "/contact"]
 
 [media]
-include = []
+include = [
+    
+]
 
 [analytics]
 tag = "analytics-tag.html"
