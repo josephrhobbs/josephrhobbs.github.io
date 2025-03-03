@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q07DLQXV96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q07DLQXV96');
+</script>
+
+<title>Lesson 1 | Educational Website</title>
+
+<link rel="stylesheet" href="/style.css">
+
+<link href="/prism.css" rel="stylesheet" />
+<script src="/prism.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+
+<body>
+
+<h1>Lesson 1: How Many States?</h1>
+
+<div class="menu">
+
+<a href="/">Home</a>
+
+<a href="/about">About</a>
+
+<a href="/subjects">Subjects</a>
+
+</div>
+
+
+
+<p>The universe is filled with large collections of things.  For example, 18 milliliters of water (just over 1 U.S. tablespoon) contains an Avogadro's number of water molecules.  Theoretically, if we understood the behavior of each water molecule exactly, we could fully characterize the properties of the collection of water molecules.  But of course, that's ridiculous... how could we ever measure the position and momentum of trillions and trillions of molecules instantaneously and with precision?  Perhaps we don't really need to make all those measurements... what if we could predict <em>microscopic</em> behavior from <em>macroscopic</em> observations, and then we could make <em>macroscopic</em> predictions from our predicted <em>microscopic</em> behaviors?</p>
+
+<p>Enter statistical mechanics.  Statistical mechanics provides an extremely powerful toolbox for reasoning mathematically and physically about large collections of things.  It meshes seamlessly with the laws of physics to give us a way to think about these large collections of things.</p>
+
+<h2>Big and Small</h2>
+
+<p>Before we begin, let's define the terms <em>microscopic</em> and <em>macroscopic</em>.</p>
+
+<p><em>Microscopic</em></p><p> behaviors are associated with a system's <em>microstate</em>.  The microstate of a system is a complete characterization of every particle in the system.  For example, the microstate of our 18 milliliter sample of water is a list of the position and momentum of every water molecule in the entire sample.</p>
+
+<p><em>Macroscopic</em></p><p> behaviors are associated with a system's <em>macrostate</em>.  The macrostate of a system is an overall, high-level depiction of a system, in terms of things that we can observe at a high level.  For example, the macrostate of our 18 milliliter sample of water describes its temperature, density, and volume, among other variables.</p>
+
+<p>Importantly, macrostate variables are <em>independent</em> of a system's precise microstate.  Knowing the temperature of a system tells us some information about <em>all</em> of the particles at once (their mean kinetic energy) but no information at all about any <em>particular</em> particle (its individual kinetic energy).</p>
+
+<h2>Counting States</h2>
+
+<p>Let's think about a very simple example to get us warmed up and accustomed to thinking in the terms of statistical mechanics.  Consider a single particle with mass \( m \) in a 2-dimensional square box with side length \( L \).  The microstate of this system consists of four variables: the position of the particle \( (x, y) \) within the box, and the momentum of the particle in both the X and Y directions \( (p_x, p_y) \).  Given these four variables, we can completely characterize the entire system.</p>
+
+<p>What do we know about the macrostate of this system?  One very common macrostate variable is <em>total energy</em>.  How much energy is contained in this system?  Because we only have one particle and its only energy is kinetic, we have</p>
+
+<p>\[ \begin{align*} E &= \frac12 m v^2 \\ &= \frac12 m (v_x^2 + v_y^2) \\ &= \frac12 m (\frac{p_x^2}{m^2} + \frac{p_y^2}{m^2}) \\ &= \frac{1}{2m} (p_x^2 + p_y^2) \end{align*} . \]</p></body>
+
+</html>
