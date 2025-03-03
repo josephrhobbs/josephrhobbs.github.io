@@ -1,5 +1,7 @@
 # Educational Website
 
+![GitHub Pages](https://github.com/josephrhobbs/josephrhobbs.github.io/actions/workflows/static.yml/badge.svg)
+
 More information coming soon!
 
 ## Planned Subjects
