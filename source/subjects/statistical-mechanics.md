@@ -8,4 +8,4 @@ The lessons below assume a general familiarity with multivariable calculus, thou
 
 ## Lessons
 
-[Lesson 1: How Many States?](statmech/lesson-1)
+[Lesson 1: How Many States?](statistical-mechanics/lesson-1)
