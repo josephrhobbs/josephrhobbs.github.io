@@ -34,15 +34,11 @@ This seems like an impossible question to answer.  The energy can be distributed
 
 Imagine a 3-dimensional coordinate space where X, Y, and Z momenta correspond to the X, Y, and Z directions.  Notice the energy equation that we have above
 
-<<<<<<< HEAD
-\[ \begin{align*} E &= \frac{1}{2m} (p_x^2 + p_y^2 + p_z^2) \\ p_x^2 + p_y^2 + p_z^2 = 2 m E \end{align*} \]
-=======
 \[ \begin{align*} E &= \frac{1}{2m} (p_x^2 + p_y^2 + p_z^2) \\ 2 m E &= p_x^2 + p_y^2 + p_z^2 \end{align*} \]
->>>>>>> master
 
 is the equation for a sphere with radius \( \sqrt{2mE} \) in this space!  We call this space _phase space_, and it is a powerful tool for relating microstate variables (like momentum) to macrostate variables (like total energy).  We're now a little closer to answering the question... every possible microstate can be represented by a point on this sphere.  Obviously, if we make the sphere bigger by adding more energy (which increases the radius), there are "more points" on the sphere and therefore more possible microstates.
 
-Let's make this mathematically rigorous.  From now on, we'll use the term "number of microstates" very loosely... just remember that we're not _actually_ counting the microstates one at a time, because that's not really possible.  Call the volume of the ball (the volume bounded by the sphere) \( \Omega_E \).  Rigorously, \( \Omega_E \) is the _volume of phase space_ bounded by all possible microstates with energy between zero and \( E \).  We can write \( \Omega_E \) as the volume of the ball with radius \( \sqrt{2mE} \) as mentioned previously.
+Let's make this mathematically rigorous.  From now on, we'll use the term "number of microstates" very loosely... just remember that we're not _actually_ counting the microstates one at a time, because that's not really possible.  Call the volume bounded by the sphere \( \Omega_E \).  Rigorously, \( \Omega_E \) is the _volume of phase space_ bounded by all possible microstates with energy between zero and \( E \).  We can write \( \Omega_E \) as the volume of the ball with radius \( \sqrt{2mE} \) as mentioned previously.
 
 \[ \begin{align*} \Omega_E &= \frac43 \pi \cdot (\sqrt{2mE})^3 \\ &= \frac{8 \sqrt{2}}{3} \pi m^{3/2} E^{3/2} \end{align*} \]
 
