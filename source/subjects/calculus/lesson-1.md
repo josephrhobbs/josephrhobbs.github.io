@@ -22,7 +22,7 @@ This is a more difficult question to answer.  In our experience, when we drop a 
 
 ## A Stroke of Genius
 
-After some thinking, you have a brilliant idea.  What if, instead of finding the velocity at a single point in time, we calculate it for a very short duration of time?  Surely that will give us an answer that's good enough.  So you try this between two points in time: \( t = 0.1 \, \mathrm{s} \) and \( t + \Delta t = 0.2 \, \mathrm{s} \).
+After some thinking, you have a brilliant idea.  What if, instead of finding the velocity at a single point in time, we calculate it for a very short duration of time?  Surely that will give us an answer that's good enough.  So you try this between two points in time: \( t = 0.1 \, \mathrm{s} \) and \( t + \Delta t = 0.2 \, \mathrm{s} \).  Here, we're using the symbol \( \Delta t \) to indicate a very short duration of time, which is currently one tenth of a second.
 
 \[ \begin{align*} h(t) &= 1 - 5 \cdot (0.1)^2 = 1 - 0.05 = 0.95 \\ h(t + \Delta t) &= 1 - 5 \cdot (0.2)^2 = 1 - 0.2 = 0.8 \\ \end{align*} \]
 
@@ -30,6 +30,12 @@ This leaves you to conclude that the velocity of the ball is _approximately_
 
 \[ \begin{align*} v &\approx \frac{h(t + \Delta t) - h(t)}{\Delta t} \\ &= \frac{0.8 - 0.95}{0.1} = -1.5 \, \mathrm{m/s} . \end{align*} \]
 
-But you know that this is only an approximation.  You wonder if you could make \( \Delta t \) _really really short_ (but not zero!) you would get an exact answer.  To do this, we'll need some new mathematical tools...
+But you know that this is only an average velocity between \( t = 0.1 \, \mathrm{s} \) and \( t + \Delta t = 0.2 \, \mathrm{s} \).  To get something more accurate, you change \( \Delta t \, \mathrm{s} \) to a smaller value.  Let's use one hundredth of a second.
+
+\[ \begin{align*} h(t) &= 1 - 5 \cdot (0.1)^2 = 1 - 0.05 = 0.95 \\ h(t + \Delta t) &= 1 - 5 \cdot (0.11)^2 = 1 - 0.0605 = 0.9395 \\ \end{align*} \]
+
+\[ \begin{align*} v &\approx \frac{h(t + \Delta t) - h(t)}{\Delta t} \\ &= \frac{0.9395 - 0.95}{0.01} = -1.05 \, \mathrm{m/s} . \end{align*} \]
+
+Very interesting... the average velocity of the ball is very close to \( -1 \, \mathrm{m/s} \) now.  But this is still just an approximation of the _instantaneous_ velocity... the velocity that occurs _exactly_ at \( t = 0.1 \, \mathrm{s} \).  You wonder if you could somehow make \( \Delta t \) shorter and shorter (but never quite zero!) you would get closer and closer to an exact answer.  To do this, we'll need some new mathematical tools...
 
 [Next Lesson](lesson-2)
