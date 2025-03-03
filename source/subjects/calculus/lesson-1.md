@@ -14,9 +14,7 @@ If we travel for 1 hour, we go 2 miles.  If we travel for 2 hours, we go 4 miles
 
 During our walk, we'll take a brief pause where I pull out a bouncy ball.  I hold the ball at 1 meter from the ground and let go.  The height of the ball can be approximated by
 
-\[
-h(t) = 1 - 5 t^2
-\]
+\[ h(t) = 1 - 5 t^2 \]
 
 where \( h \) is the height of the ball (in meters) and \( t \) is the time since I let go of the ball (in seconds).  One tenth of a second after I let go of the ball, how fast is it going?
 
@@ -26,18 +24,11 @@ This is a more difficult question to answer.  In our experience, when we drop a 
 
 After some thinking, you have a brilliant idea.  What if, instead of finding the velocity at a single point in time, we calculate it for a very short duration of time?  Surely that will give us an answer that's good enough.  So you try this between two points in time: \( t = 0.1 \, \mathrm{s} \) and \( t + \Delta t = 0.2 \, \mathrm{s} \).
 
-\[
-\begin{align*}
-h(t) &= 1 - 5 * (0.1)^2 = 1 - 0.05 = 0.95 \\
-h(t + \Delta t) &= 1 - 5 * (0.2)^2 = 1 - 0.2 = 0.8 \\
-\end{align*}
-\]
+\[ \begin{align*} h(t) &= 1 - 5 * (0.1)^2 = 1 - 0.05 = 0.95 \\ h(t + \Delta t) &= 1 - 5 * (0.2)^2 = 1 - 0.2 = 0.8 \\ \end{align*} \]
 
 This leaves you to conclude that the velocity of the ball is _approximately_
 
-\[
-v \approx \frac{h(t + \Delta t) - h(t)}{\Delta t} = \frac{0.8 - 0.95}{0.1} = -1.5 \, \mathrm{m/s} .
-\]
+\[ v \approx \frac{h(t + \Delta t) - h(t)}{\Delta t} = \frac{0.8 - 0.95}{0.1} = -1.5 \, \mathrm{m/s} . \]
 
 But you know that this is only an approximation.  You wonder if you could make \( \Delta t \) _really really short_ (but not zero!) you would get an exact answer.  To do this, we'll need some new mathematical tools...
 

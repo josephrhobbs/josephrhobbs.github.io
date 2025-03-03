@@ -55,7 +55,7 @@
 
 <p>During our walk, we'll take a brief pause where I pull out a bouncy ball.  I hold the ball at 1 meter from the ground and let go.  The height of the ball can be approximated by</p>
 
-<p>\[</p><p>h(t) = 1 - 5 t^2</p><p>\]</p>
+<p>\[ h(t) = 1 - 5 t^2 \]</p>
 
 <p>where \( h \) is the height of the ball (in meters) and \( t \) is the time since I let go of the ball (in seconds).  One tenth of a second after I let go of the ball, how fast is it going?</p>
 
@@ -65,11 +65,11 @@
 
 <p>After some thinking, you have a brilliant idea.  What if, instead of finding the velocity at a single point in time, we calculate it for a very short duration of time?  Surely that will give us an answer that's good enough.  So you try this between two points in time: \( t = 0.1 \, \mathrm{s} \) and \( t + \Delta t = 0.2 \, \mathrm{s} \).</p>
 
-<p>\[</p><p>\begin{align*}</p><p>h(t) &= 1 - 5 * (0.1)^2 = 1 - 0.05 = 0.95 \\</p><p>h(t + \Delta t) &= 1 - 5 * (0.2)^2 = 1 - 0.2 = 0.8 \\</p><p>\end{align*}</p><p>\]</p>
+<p>\[ \begin{align*} h(t) &= 1 - 5 * (0.1)^2 = 1 - 0.05 = 0.95 \\ h(t + \Delta t) &= 1 - 5 * (0.2)^2 = 1 - 0.2 = 0.8 \\ \end{align*} \]</p>
 
 <p>This leaves you to conclude that the velocity of the ball is <em>approximately</em></p>
 
-<p>\[</p><p>v \approx \frac{h(t + \Delta t) - h(t)}{\Delta t} = \frac{0.8 - 0.95}{0.1} = -1.5 \, \mathrm{m/s} .</p><p>\]</p>
+<p>\[ v \approx \frac{h(t + \Delta t) - h(t)}{\Delta t} = \frac{0.8 - 0.95}{0.1} = -1.5 \, \mathrm{m/s} . \]</p>
 
 <p>But you know that this is only an approximation.  You wonder if you could make \( \Delta t \) <em>really really short</em> (but not zero!) you would get an exact answer.  To do this, we'll need some new mathematical tools...</p>
 
