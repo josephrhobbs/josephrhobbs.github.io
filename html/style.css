@@ -56,7 +56,7 @@
         
     body {
         font-family: "Computer Modern Serif", serif;
-        margin: 96px 192px 96px 192px;
+        margin: 0px;
         background-color: #f7f4ee;
     }
 
@@ -66,21 +66,27 @@
         text-align: center;
         background-color: var(--flamered);
         color: white;
-        margin: 0px;
+        margin: 0px 192px 0px 192px;
         padding: 48px 0px 24px 0px;
     }
 
     h2 {
+        margin-left: 192px;
+        margin-right: 192px;
         font-family: "Lexend", sans-serif;
         font-size: 32px;
     }
 
     h3 {
+        margin-left: 192px;
+        margin-right: 192px;
         font-family: "Lexend", sans-serif;
         font-size: 24px;
     }
 
     p {
+        margin-left: 192px;
+        margin-right: 192px;
         font-size: 24px;
         text-indent: 48px;
         line-height: 48px;
