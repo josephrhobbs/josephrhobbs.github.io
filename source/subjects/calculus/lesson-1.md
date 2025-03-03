@@ -2,7 +2,7 @@
 
 ~
 
-The universe is full of change.  The universe changes as time passes, and it also changes from place to place.  This is universal to the human experience... the sun rises and sets, the wind blows, rivers flow, and flowers blossom and fade.  Clearly, nature has a tendency to change.  One of the most powerful tools in our human understanding of the universe is _calculus_: the mathematics of change.  With calculus, we can describe exactly how things change in time and space, and relate those changes to one another.
+The universe is full of change.  The universe changes as time passes, and it also changes from place to place.  This is universal to the human experience... the sun rises and sets, the wind blows, rivers flow, and flowers blossom and fade.  Clearly, nature has a tendency to change.  One of the most powerful tools in our human understanding of the universe is _calculus_, the mathematics of change.  With calculus, we can describe exactly how things change in time and space, and relate those changes to one another.
 
 ## Going for a Walk
 
