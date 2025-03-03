@@ -10,9 +10,9 @@ Enter statistical mechanics.  Statistical mechanics provides an extremely powerf
 
 Before we begin, let's define the terms _microscopic_ and _macroscopic_.
 
-_Microscopic_ behaviors are associated with a system's _microstate_.  The microstate of a system is a complete characterization of every particle in the system.  For example, the microstate of our 18 milliliter sample of water is a list of the position and momentum of every water molecule in the entire sample.
+The _microscopic_ behaviors of a system are associated with a system's _microstate_.  The microstate of a system is a complete characterization of every particle in the system.  For example, the microstate of our 18 milliliter sample of water is a list of the position and momentum of every water molecule in the entire sample.
 
-_Macroscopic_ behaviors are associated with a system's _macrostate_.  The macrostate of a system is an overall, high-level depiction of a system, in terms of things that we can observe at a high level.  For example, the macrostate of our 18 milliliter sample of water describes its temperature, density, and volume, among other variables.
+The _macroscopic_ behaviors of a system are associated with a system's _macrostate_.  The macrostate of a system is an overall, high-level depiction of a system, in terms of things that we can observe at a high level.  For example, the macrostate of our 18 milliliter sample of water describes its temperature, density, and volume, among other variables.
 
 Importantly, macrostate variables are _independent_ of a system's precise microstate.  Knowing the temperature of a system tells us some information about _all_ of the particles at once (their mean kinetic energy) but no information at all about any _particular_ particle (its individual kinetic energy).
 
@@ -22,4 +22,4 @@ Let's think about a very simple example to get us warmed up and accustomed to th
 
 What do we know about the macrostate of this system?  One very common macrostate variable is _total energy_.  How much energy is contained in this system?  Because we only have one particle and its only energy is kinetic, we have
 
-\[ \begin{align*} E &= \frac12 m v^2 \\ &= \frac12 m (v_x^2 + v_y^2) \\ &= \frac12 m (\frac{p_x^2}{m^2} + \frac{p_y^2}{m^2}) \\ &= \frac{1}{2m} (p_x^2 + p_y^2) \end{align*} . \]
+\[ \begin{align*} E &= \frac12 m v^2 \\ &= \frac12 m (v_x^2 + v_y^2) \\ &= \frac12 m (\frac{p_x^2}{m^2} + \frac{p_y^2}{m^2}) \\ &= \frac{1}{2m} (p_x^2 + p_y^2) . \end{align*} \]
