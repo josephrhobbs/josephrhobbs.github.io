@@ -28,7 +28,7 @@ After some thinking, you have a brilliant idea.  What if, instead of finding the
 
 This leaves you to conclude that the velocity of the ball is _approximately_
 
-\[ v \approx \frac{h(t + \Delta t) - h(t)}{\Delta t} = \frac{0.8 - 0.95}{0.1} = -1.5 \, \mathrm{m/s} . \]
+\[ \begin{multline*} v \approx \frac{h(t + \Delta t) - h(t)}{\Delta t} \\ = \frac{0.8 - 0.95}{0.1} = -1.5 \, \mathrm{m/s} . \end{multline*} \]
 
 But you know that this is only an approximation.  You wonder if you could make \( \Delta t \) _really really short_ (but not zero!) you would get an exact answer.  To do this, we'll need some new mathematical tools...
 
