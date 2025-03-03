@@ -20,7 +20,7 @@ where \( h \) is the height of the ball (in meters) and \( t \) is the time sinc
 
 This is a more difficult question to answer.  In our experience, when we drop a ball, it seems to get faster as it falls.  How can we know its velocity at a single point in time?  We calculate velocity as \( v = d / t \), where \( d \) is the distance traveled and \( t \) is the time elapsed.  But at a _single point in time_, no time elapses, and the ball doesn't move, so we have \( v = 0/0 \) which is indeterminate!  So what shall we do?
 
-## Section Head
+## A Stroke of Genius
 
 After some thinking, you have a brilliant idea.  What if, instead of finding the velocity at a single point in time, we calculate it for a very short duration of time?  Surely that will give us an answer that's good enough.  So you try this between two points in time: \( t = 0.1 \, \mathrm{s} \) and \( t + \Delta t = 0.2 \, \mathrm{s} \).
 
