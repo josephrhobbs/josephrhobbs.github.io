@@ -8,3 +8,6 @@ links = ["/", "/about", "/subjects"]
 
 [media]
 include = []
+
+[analytics]
+tag = "analytics-tag.html"
