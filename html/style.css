@@ -72,15 +72,13 @@
     }
 
     h2 {
-        margin-left: 192px;
-        margin-right: 192px;
+        margin: 24px 192px 24px 192px;
         font-family: "Lexend", sans-serif;
         font-size: 32px;
     }
 
     h3 {
-        margin-left: 192px;
-        margin-right: 192px;
+        margin: 24px 192px 24px 192px;
         font-family: "Lexend", sans-serif;
         font-size: 24px;
     }
