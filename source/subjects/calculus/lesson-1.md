@@ -24,7 +24,7 @@ This is a more difficult question to answer.  In our experience, when we drop a 
 
 After some thinking, you have a brilliant idea.  What if, instead of finding the velocity at a single point in time, we calculate it for a very short duration of time?  Surely that will give us an answer that's good enough.  So you try this between two points in time: \( t = 0.1 \, \mathrm{s} \) and \( t + \Delta t = 0.2 \, \mathrm{s} \).
 
-\[ \begin{align*} h(t) &= 1 - 5 * (0.1)^2 = 1 - 0.05 = 0.95 \\ h(t + \Delta t) &= 1 - 5 * (0.2)^2 = 1 - 0.2 = 0.8 \\ \end{align*} \]
+\[ \begin{align*} h(t) &= 1 - 5 \cdot (0.1)^2 = 1 - 0.05 = 0.95 \\ h(t + \Delta t) &= 1 - 5 \cdot (0.2)^2 = 1 - 0.2 = 0.8 \\ \end{align*} \]
 
 This leaves you to conclude that the velocity of the ball is _approximately_
 
