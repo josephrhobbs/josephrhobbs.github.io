@@ -30,11 +30,11 @@ Another very common macrostate variable is _volume_.  The volume of a cube with 
 
 Our next question is quite unusual, but its answer forms the foundation of all statistical mechanics.  For a given energy \( E \), how many possible unique microstates can this system be in?
 
-This seems like an impossible question to answer.  The energy can be distributed across both the X momentum and the Y momentum in an uncountably infinite number of ways.  Certainly it can't make sense to ask about "how many" unique microstates there are.  But is there any way we can quantify the question we're asking?
+This seems like an impossible question to answer.  The energy can be distributed across the X, Y, and Z momenta in an uncountably infinite number of ways.  Certainly it can't make sense to ask about "how many" unique microstates there are.  But is there any way we can quantify the question we're asking?
 
-Imagine a 3-dimensional coordinate space where X momentum, Y momentum, and Z momentum correspond to the X, Y, and Z directions.  Notice the energy equation that we have above
+Imagine a 3-dimensional coordinate space where X, Y, and Z momenta correspond to the X, Y, and Z directions.  Notice the energy equation that we have above
 
-\[ E = \frac{1}{2m} (p_x^2 + p_y^2 + p_z^2) \]
+\[ \begin{align*} E &= \frac{1}{2m} (p_x^2 + p_y^2 + p_z^2) \\ p_x^2 + p_y^2 + p_z^2 = 2 m E \end{align*} \]
 
 is the equation for a sphere with radius \( \sqrt{2mE} \) in this space!  We call this space _phase space_, and it is a powerful tool for relating microstate variables (like momentum) to macrostate variables (like total energy).  We're now a little closer to answering the question... every possible microstate can be represented by a point on this sphere.  Obviously, if we make the sphere bigger by adding more energy (which increases the radius), there are "more points" on the sphere and therefore more possible microstates.
 
