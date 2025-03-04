@@ -6,42 +6,24 @@ In the last lesson, we derived the density of states function for a single parti
 
 ## Density of States
 
-Remember the density of states function?
+Remember the density of states function for a single particle?
 
-\[ \omega_E(E) = 4 \pi \sqrt{2} m^{3/2} \sqrt{E} \]
+\[ \Omega = 4 \sqrt{2} m^{3/2} \pi V \sqrt{E} \]
 
 Let's think about how we can get here again, but with N particles in a box.  Assuming we still have total energy \( E \) that exists purely in the form of kinetic energy (no potential energy), we can write the phase space relation
 
 \[ E = \frac{1}{2m} (p_{1x}^2 + p_{1y}^2 + p_{1z}^2 + \cdots) \]
 
-and sum the momentum terms over every single particle in the box.  Our phase space is no longer 3-dimensional... it's now \( 3N \) dimensional.  But our original reasoning still holds... because we have a sum over squared terms, this equation represents a hypersphere in \( 3N \) dimensions with a radius of \( \sqrt{2mE} \).  We can now use this handy equation to calculate the hypervolume contained inside a \( k \)-dimensional sphere.  Here, we use the symbol \( \Gamma \) to represent [Euler's gamma function](https://en.wikipedia.org/wiki/Gamma_function).
+and sum the momentum terms over every single particle in the box.  Our phase space is no longer 6-dimensional... it's now \( 3N \) dimensional.  But our original reasoning still holds... because we have a sum over squared terms, this equation represents a hypersphere in \( 3N \) dimensions with a radius of \( \sqrt{2mE} \).  We can now use this handy equation to calculate the hypervolume contained inside a \( k \)-dimensional ball.  Here, we use the symbol \( \Gamma \) to represent [Euler's gamma function](https://en.wikipedia.org/wiki/Gamma_function).
 
 \[ V = \frac{\pi^{k/2}}{\Gamma(\frac{k}{2} + 1)} R^k \]
 
-Our phase space volume \( \Omega_E \) can be written using \( k = 3N \) and \( R = \sqrt{2mE} \).
+Our phase space volume \( \Omega \) can be written using \( k = 3N \) and \( R = \sqrt{2mE} \).  Starting with the definition of the density of states,
 
-\[ \Omega_E = \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} E^{3N/2} \]
+\[ \Omega := \frac{\partial}{\partial E} \int_S \, dV \]
 
-Last step!  Let's take the derivative of this with respect to \( E \) to get our density of states.
+we can substitute known values and differentiate to obtain a final result.
 
-\[ \begin{align*} \omega_E &= \frac{d\Omega_E}{dE} \\ &= \frac{3N}{2} \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} E^{3N/2 - 1} \end{align*} \]
+\[ \begin{align*} \Omega &= \frac{\partial}{\partial E} \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} V E^{3N/2} \\ \frac{3N}{2} \frac{(2 \pi m)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} V E^{3N/2 - 1} \end{align*} \]
 
 This is the density of states equation for \( N \) particles in a box!  It can be easily shown that this is equivalent to our original result when \( N = 1 \).
-
-## Pushing the Envelope
-
-This is great.  We now have an expression for the density of states for \( N \) particles in a box.  What happens when we change the size of the box though?  To be completely honest, our picture of phase space is a little bit... incomplete.  We can't _fully_ characterize a system with just the momenta of each particle, because we need to account for the position of each particle too!
-
-The dimension of the phase space for \( N \) particles in a 3-dimensional box is actually \( 6N \), because each particle has three position coordinates and momenta in each of three directions.  Let's hold all of the velocity dimensions constant and look at possible positions.  Similar to before, we define \( \Omega_V \) to be the volume of phase space defined by all possible microstates with overall volume between zero and \( V \).
-
-\[ \Omega_V = V^N \]
-
-This is a lot to wrap one's head around.  The best way to think about it is that, for each particle, the three-dimensional volume in phase space is \( V \), so the \( N \)-dimensional hypervolume in phase space is \( V^N \).  We can now differentiate this as before to get \( \omega_V \), the "number of microstates" between \( V \) and \( V + dV \).
-
-\[ \begin{align*} \omega_V &= \frac{d\Omega_V}{dV} \\ &= N V^{N-1} \end{align*} \]
-
-Excellent!  We now have a density of states equation corresponding to the "number of microstates" available at a volume of \( V \).  As the volume increases, there are more places that the particles can be, so we would intuitively expect the density of states to increase.  Furthermore, with \( N \), each particle can be independently considered, resulting in the density of states.
-
-## The Final Density of States
-
-The complete density of states relationship can be expressed as a product of \( \omega_E \) and \( \omega_V \).  We can take the product between the two because 
