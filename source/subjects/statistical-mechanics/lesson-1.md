@@ -46,4 +46,4 @@ If you'll remember though, this corresponds to the number of microstates with en
 
 \[ \begin{align*} \omega_E &= \frac{d\Omega_E}{dE} \\ &= \frac{8 \sqrt{2}}{3} \pi m^{3/2} \cdot \frac{d}{dE} E^{3/2} \\ &= 4 \pi \sqrt{2} m^{3/2} \sqrt{E} \end{align*} \]
 
-Very interesting!  It would seem that, as we add energy to this system, the number of possible states in which it can exist increases with the square root of energy.  This function \( \omega \) is so important to statistical mechanics that we will give it a special name... the _density of states_ function.
+Very interesting!  It would seem that, as we add energy to this system, the number of possible states in which it can exist increases with the square root of energy.  This function \( \omega \) is so important to statistical mechanics that we will give it a special name... the _density of states_ function.  The proportionality factors out front will end up not mattering in the near future... what's critical here is that the density of states is proportional to the square root of energy for one particle.
