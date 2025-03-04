@@ -14,7 +14,7 @@ Let's think about how we can get here again, but with N particles in a box.  Ass
 
 \[ E = \frac{1}{2m} (p_{1x}^2 + p_{1y}^2 + p_{1z}^2 + \cdots) \]
 
-and sum the momentum terms over every single particle in the box.  Our phase space is no longer 3-dimensional... it's now \( 3N \) dimensional.  But our original reasoning still holds... because we have a sum over squared terms, this equation represents a hypersphere in \( 3N \) dimensions with a radius of \( \sqrt{2mE} \).  We can now use this handy equation to calculate the hypervolume contained inside a \( k \)-dimensional sphere.
+and sum the momentum terms over every single particle in the box.  Our phase space is no longer 3-dimensional... it's now \( 3N \) dimensional.  But our original reasoning still holds... because we have a sum over squared terms, this equation represents a hypersphere in \( 3N \) dimensions with a radius of \( \sqrt{2mE} \).  We can now use this handy equation to calculate the hypervolume contained inside a \( k \)-dimensional sphere.  Here, we use the symbol \( \Gamma \) to represent [Euler's gamma function](https://en.wikipedia.org/wiki/Gamma_function).
 
 \[ V = \frac{\pi^{k/2}}{\Gamma(\frac{k}{2} + 1)} R^k \]
 
