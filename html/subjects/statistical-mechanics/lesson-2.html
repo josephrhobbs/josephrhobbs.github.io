@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q07DLQXV96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q07DLQXV96');
+</script>
+
+<title>Lesson 2 | Educational Website</title>
+
+<link rel="stylesheet" href="/style.css">
+
+<link href="/prism.css" rel="stylesheet" />
+<script src="/prism.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+
+<body>
+
+<h1>Lesson 2: Another Dimension, Another Dimension</h1>
+
+<div class="menu">
+
+<a href="/">Home</a>
+
+<a href="/about">About</a>
+
+<a href="/subjects">Subjects</a>
+
+<a href="/blog">Blog</a>
+
+<a href="/contact">Contact</a>
+
+</div>
+
+
+
+<p>In the last lesson, we derived the density of states function for a single particle in a 3-dimensional box.  This is an immense step forward in our journey through statistical mechanics.  Unfortunately, we are quite limited by the fact that we often don't deal with single particles.  Often, problems in science and engineering require reasoning about trillions upon trillions of particles, such as a sample of matter composed of atoms.  How can we generalize for \( N \) particles in a box?</p>
+
+<h2>Density of States</h2>
+
+<p>Remember the density of states function?</p>
+
+<p>\[ \omega_E(E) = 4 \pi \sqrt{2} m^{3/2} \sqrt{E} \]</p>
+
+<p>Let's think about how we can get here again, but with N particles in a box.  Assuming we still have total energy \( E \) that exists purely in the form of kinetic energy (no potential energy), we can write the phase space relation</p>
+
+<p>\[ E = \frac{1}{2m} (p_{1x}^2 + p_{1y}^2 + p_{1z}^2 + \cdots) \]</p>
+
+<p>and sum the momentum terms over every single particle in the box.  Our phase space is no longer 3-dimensional... it's now \( 3N \) dimensional.  But our original reasoning still holds... because we have a sum over squared terms, this equation represents a hypersphere in \( 3N \) dimensions with a radius of \( \sqrt{2mE} \).  We can now use this handy equation to calculate the hypervolume contained inside a \( k \)-dimensional sphere.</p>
+
+<p>\[ V = \frac{\pi^{k/2}}{\Gamma(\frac{k}{2} + 1)} R^k \]</p>
+
+<p>Our phase space volume \( \Omega_E \) can be written using \( k = 3N \) and \( R = \sqrt{2mE} \).</p>
+
+<p>\[ \Omega_E = \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} E^{3N/2} \]</p>
+
+<p>Last step!  Let's take the derivative of this with respect to \( E \) to get our density of states.</p>
+
+<p>\[ \begin{align*} \omega_E &= \frac{d\Omega_E}{dE} \\ &= \frac{3N}{2} \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} E^{3N/2 - 1} \end{align*} \]</p>
+
+<p>This is the density of states equations for \( N \) particles in a box!  It can be easily shown that this is equivalent to our original result when \( N = 1 \).</p>
+
+</body>
+
+</html>
