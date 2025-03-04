@@ -9,3 +9,5 @@ The lessons below assume a general familiarity with multivariable calculus, thou
 ## Lessons
 
 [Lesson 1: How Many States?](statistical-mechanics/lesson-1)
+
+[Lesson 2: Another Dimension, Another Dimension](statistical-mechanics/lesson-2)
