@@ -24,6 +24,6 @@ Our phase space volume \( \Omega \) can be written using \( k = 3N \) and \( R =
 
 we can substitute known values and differentiate to obtain a final result.
 
-\[ \begin{align*} \Omega &= \frac{\partial}{\partial E} \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} V E^{3N/2} \\ \frac{3N}{2} \frac{(2 \pi m)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} V E^{3N/2 - 1} \end{align*} \]
+\[ \begin{align*} \Omega &= \frac{\partial}{\partial E} \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} V E^{3N/2} \\ &= \frac{3N}{2} \frac{(2 \pi m)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} V E^{3N/2 - 1} \end{align*} \]
 
 This is the density of states equation for \( N \) particles in a box!  It can be easily shown that this is equivalent to our original result when \( N = 1 \).
