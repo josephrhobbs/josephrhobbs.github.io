@@ -50,7 +50,7 @@ we see that \( x, y, z \) must _also_ lie inside a cube with side length \( L \)
 
 In other words, \( p \) is a constant value across \( S \).  But not just any value... we can actually compute it!  Probability density functions, by their definition, need to integrate to one across all of space.  Because \( p \) is only nonzero inside of \( S \), we can write
 
-\[ \begin{align*} \int_S p \, dV &= p \int_S \, dV = 1 \\ \therefore p &= \frac{1}{\int_S \, dV} \end{align*} . \]
+\[ \begin{align*} \int_S p \, dV &= p \int_S \, dV = 1 \\ \therefore p &= \frac{1}{\int_S \, dV} . \end{align*} \]
 
 This gives us an explicit expression for the probability density of any given microstate.  So we're almost done?
 
@@ -78,7 +78,7 @@ We now have an integral only in terms of spatial coordinates.  We recognize this
 
 Last step!  Let's differentiate with respect to total energy.
 
-\[ \Omega = \frac{\partial}{\partial E} 4 \sqrt{2} m^{3/2} \pi V \sqrt{E} \]
+\[ \Omega = 4 \sqrt{2} m^{3/2} \pi V \sqrt{E} \]
 
 Very interesting!  It would seem that, as we add energy to this system, the number of possible states in which it can exist increases with the square root of energy.  The proportionality factors out front will end up not mattering in the near future... what's critical here is that the density of states is proportional to the square root of energy for one particle.
 
