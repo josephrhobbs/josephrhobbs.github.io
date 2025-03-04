@@ -26,5 +26,22 @@ Last step!  Let's take the derivative of this with respect to \( E \) to get our
 
 \[ \begin{align*} \omega_E &= \frac{d\Omega_E}{dE} \\ &= \frac{3N}{2} \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} E^{3N/2 - 1} \end{align*} \]
 
-This is the density of states equations for \( N \) particles in a box!  It can be easily shown that this is equivalent to our original result when \( N = 1 \).
+This is the density of states equation for \( N \) particles in a box!  It can be easily shown that this is equivalent to our original result when \( N = 1 \).
 
+## Pushing the Envelope
+
+This is great.  We now have an expression for the density of states for \( N \) particles in a box.  What happens when we change the size of the box though?  To be completely honest, our picture of phase space is a little bit... incomplete.  We can't _fully_ characterize a system with just the momenta of each particle, because we need to account for the position of each particle too!
+
+The dimension of the phase space for \( N \) particles in a 3-dimensional box is actually \( 6N \), because each particle has three position coordinates and momenta in each of three directions.  Let's hold all of the velocity dimensions constant and look at possible positions.  Similar to before, we define \( \Omega_V \) to be the volume of phase space defined by all possible microstates with overall volume between zero and \( V \).
+
+\[ \Omega_V = V^N \]
+
+This is a lot to wrap one's head around.  The best way to think about it is that, for each particle, the three-dimensional volume in phase space is \( V \), so the \( N \)-dimensional hypervolume in phase space is \( V^N \).  We can now differentiate this as before to get \( \omega_V \), the "number of microstates" between \( V \) and \( V + dV \).
+
+\[ \begin{align*} \omega_V &= \frac{d\Omega_V}{dV} \\ &= N V^{N-1} \end{align*} \]
+
+Excellent!  We now have a density of states equation corresponding to the "number of microstates" available at a volume of \( V \).  As the volume increases, there are more places that the particles can be, so we would intuitively expect the density of states to increase.  Furthermore, with \( N \), each particle can be independently considered, resulting in the density of states.
+
+## The Final Density of States
+
+The complete density of states relationship can be expressed as a product of \( \omega_E \) and \( \omega_V \).  We can take the product between the two because 
