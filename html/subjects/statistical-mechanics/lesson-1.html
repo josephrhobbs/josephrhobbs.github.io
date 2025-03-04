@@ -69,24 +69,60 @@
 
 <p>\[ V = L^3 . \]</p>
 
-<p>Our next question is quite unusual, but its answer forms the foundation of all statistical mechanics.  For a given energy \( E \), how many possible unique microstates can this system be in?</p>
+<p>Our next question is quite unusual, but its answer forms the foundation of all statistical mechanics.  For a given macrostate (energy \( E \) and volume \( V \)), what is the probability that the system is in a specific microstate?</p>
 
-<p>This seems like an impossible question to answer.  The energy can be distributed across the X, Y, and Z momenta in an uncountably infinite number of ways.  Certainly it can't make sense to ask about "how many" unique microstates there are.  But is there any way we can quantify the question we're asking?</p>
+<p>This seems on the surface to be an impossible question to answer.  There are an uncountably infinite number of possible microstates, and therefore each one has zero probability.  So let's rephrase our question... given a specific macrostate, what is the probability <em>density</em> of a specific microstate?</p>
 
-<p>Imagine a 3-dimensional coordinate space where X, Y, and Z momenta correspond to the X, Y, and Z directions.  Notice the energy equation that we have above</p>
+<h2>The Fundamental Postulate</h2>
+
+<p>To answer this question, we will need to understand the <em>fundamental postulate of statistical mechanics</em>.  The fundamental postulate states that, for an isolated system in equilibrium, every possible microstate is equally likely.  We refer to this as a postulate because it does not come from any experimental evidence or rational justification... it simply seems like a good guess, and scientists are pretty confident in it because it leads to reasonable results.</p>
+
+<p>Mathematically, we can express the postulate by thinking of each microstate as a point in a six-dimensional <em>phase space</em>.  Consider a six-dimensional space in which every dimension represents a microscopic variable.  This allows us to represent the X, Y, and Z coordinates and X, Y, and Z momenta independently.  For reasons that will become clear shortly, we'll focus on the range of energies between zero and \( E \).  If we allow energies between zero and \( E \) and we fix the volume at \( V \), there will be constraints on which microstates are <em>accessible</em>.  Considering only the momenta in a three-dimensional space,</p>
 
 <p>\[ \begin{align*} E &= \frac{1}{2m} (p_x^2 + p_y^2 + p_z^2) \\ 2 m E &= p_x^2 + p_y^2 + p_z^2 \end{align*} \]</p>
 
-<p>is the equation for a sphere with radius \( \sqrt{2mE} \) in this space!  We call this space <em>phase space</em>, and it is a powerful tool for relating microstate variables (like momentum) to macrostate variables (like total energy).  We're now a little closer to answering the question... every possible microstate can be represented by a point on this sphere.  Obviously, if we make the sphere bigger by adding more energy (which increases the radius), there are "more points" on the sphere and therefore more possible microstates.</p>
+<p>we see that \( p_x, p_y, p_z \) must lie inside a ball with radius \( \sqrt{2mE} \).  Considering only the positions in a three-dimensional space,</p>
 
-<p>Let's make this mathematically rigorous.  From now on, we'll use the term "number of microstates" very loosely... just remember that we're not <em>actually</em> counting the microstates one at a time, because that's not really possible.  Call the volume bounded by the sphere \( \Omega_E \).  Rigorously, \( \Omega_E \) is the <em>volume of phase space</em> bounded by all possible microstates with energy between zero and \( E \).  We can write \( \Omega_E \) as the volume of the ball with radius \( \sqrt{2mE} \) as mentioned previously.</p>
+<p>\[ V = L^3 \]</p>
 
-<p>\[ \begin{align*} \Omega_E &= \frac43 \pi \cdot (\sqrt{2mE})^3 \\ &= \frac{8 \sqrt{2}}{3} \pi m^{3/2} E^{3/2} \end{align*} \]</p>
+<p>we see that \( x, y, z \) must <em>also</em> lie inside a cube with side length \( L \).  Let's call the accessible region \( S \) and the probability density of a given microstate \( p \).  The fundamental postulate of statistical mechanics tells us that</p>
 
-<p>If you'll remember though, this corresponds to the number of microstates with energies <em>between</em> zero and \( E \).  But we wanted to know the number of microstates corresponding to an energy of exactly \( E \).  Perhaps we can take the derivative of \( \Omega_E \), which would give us the "number of microstates" (again, very loosely) between \( E \) and \( E + dE \) for a very small \( dE \).  We'll call this \( \omega_E \).</p>
+<p>\[ \int_S p \, dV = p \int_S \, dV . \]</p>
 
-<p>\[ \begin{align*} \omega_E &= \frac{d\Omega_E}{dE} \\ &= \frac{8 \sqrt{2}}{3} \pi m^{3/2} \cdot \frac{d}{dE} E^{3/2} \\ &= 4 \pi \sqrt{2} m^{3/2} \sqrt{E} \end{align*} \]</p>
+<p>In other words, \( p \) is a constant value across \( S \).  But not just any value... we can actually compute it!  Probability density functions, by their definition, need to integrate to one across all of space.  Because \( p \) is only nonzero inside of \( S \), we can write</p>
 
-<p>Very interesting!  It would seem that, as we add energy to this system, the number of possible states in which it can exist increases with the square root of energy.  This function \( \omega \) is so important to statistical mechanics that we will give it a special name... the <em>density of states</em> function.  The proportionality factors out front will end up not mattering in the near future... what's critical here is that the density of states is proportional to the square root of energy for one particle.</p></body>
+<p>\[ \begin{align*} \int_S p \, dV &= p \int_S \, dV = 1 \\ \therefore p &= \frac{1}{\int_S \, dV} \end{align*} . \]</p>
+
+<p>This gives us an explicit expression for the probability density of any given microstate.  So we're almost done?</p>
+
+<h2>Density of States</h2>
+
+<p>Not quite.  We took that integral above over all accessible microstates with energies <em>between</em> zero and \( E \).  We did this so that our result would work out to a six-dimensional volume, which happens to make the mathematics a bit easier.  But that isn't quite what we want, now is it?  What we should have done is measured the accessible microstates with energies of <em>exactly</em> \( E \).  It turns out a good way to approach this is differentiating the volume of \( S \) with respect to \( E \).  Conceptually, taking a derivative takes a measurement of the space between \( E \) and \( E + dE \) as \( dE \) gets extremely small.  Let's define this result as \( \Omega \).</p>
+
+<p>\[ \Omega := \frac{\partial}{\partial E} \int_S \, dV \]</p>
+
+<p>This result is so important that it has a special name in statistical mechanics... the <em>density of states</em> function.  Though it may have a very strange definition, the ability to calculate it will serve us very well, as we'll see shortly.</p>
+
+<h2>Integrate, Integrate, Integrate!</h2>
+
+<p>Let's compute the density of states function \( \Omega \) for our provided particle in a 3-dimensional box.  By the definition of the density of states,</p>
+
+<p>\[ \begin{align*} \Omega &:= \frac{\partial}{\partial E} \int_S \, dV \\ &= \frac{\partial}{\partial E} \int_S \, dp_x \, dp_y \, dp_z \, dx \, dy \, dz \end{align*} \]</p>
+
+<p>Remember when we said that considering the momentum was like integrating over a ball in 3-dimensions?</p>
+
+<p>\[ \Omega = \frac{\partial}{\partial E} \int_S \frac{4}{3} \pi (2mE)^{3/2} \, dx \, dy \, dz \]</p>
+
+<p>We now have an integral only in terms of spatial coordinates.  We recognize this as simply the volume of the box itself.</p>
+
+<p>\[ \Omega = \frac{\partial}{\partial E} \frac{8 \sqrt{2}}{3} \pi (mE)^{3/2} V \]</p>
+
+<p>Last step!  Let's differentiate with respect to total energy.</p>
+
+<p>\[ \Omega = \frac{\partial}{\partial E} 4 \sqrt{2} m^{3/2} \pi V \sqrt{E} \]</p>
+
+<p>Very interesting!  It would seem that, as we add energy to this system, the number of possible states in which it can exist increases with the square root of energy.  The proportionality factors out front will end up not mattering in the near future... what's critical here is that the density of states is proportional to the square root of energy for one particle.</p>
+
+<p>In review, the density of states function is the <em>derivative</em> with respect to <em>total energy</em> of the volume of phase space contained by \( 0 \le \frac{1}{2m} \sum_i p_i^2 \le E \).  That's a lot to think about!  A non-rigorous but perfectly acceptable way to think about the density of states is as a "number" of accessible microstates, even though the density of states doesn't always evaluate to an integer.  In the next lesson, we'll extend our reasoning here to \( N \) particles in a box!</p></body>
 
 </html>
