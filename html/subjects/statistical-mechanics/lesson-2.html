@@ -29,7 +29,7 @@
 
 <body>
 
-<h1>Lesson 2: Another Dimension, Another Dimension</h1>
+<h1>Lesson 2: More Particles</h1>
 
 <div class="menu">
 
@@ -38,6 +38,10 @@
 <a href="/about">About</a>
 
 <a href="/subjects">Subjects</a>
+
+<a href="/blog">Blog</a>
+
+<a href="/contact">Contact</a>
 
 </div>
 
@@ -51,11 +55,11 @@
 
 <p>\[ \Omega = 4 \sqrt{2} m^{3/2} \pi V \sqrt{E} \]</p>
 
-<p>Let's think about how we can get here again, but with N particles in a box.  Assuming we still have total energy \( E \) that exists purely in the form of kinetic energy (no potential energy), we can write the phase space relation</p>
+<p>Let's think about how we can get here again, but with \( N \) particles in a box.  Assuming we still have total energy \( E \) that exists purely in the form of kinetic energy (no potential energy), we can write the phase space relation</p>
 
 <p>\[ E = \frac{1}{2m} (p_{1x}^2 + p_{1y}^2 + p_{1z}^2 + \cdots) \]</p>
 
-<p>and sum the momentum terms over every single particle in the box.  Our phase space is no longer 6-dimensional... it's now \( 3N \) dimensional.  But our original reasoning still holds... because we have a sum over squared terms, this equation represents a hypersphere in \( 3N \) dimensions with a radius of \( \sqrt{2mE} \).  We can now use this handy equation to calculate the hypervolume contained inside a \( k \)-dimensional ball.  Here, we use the symbol \( \Gamma \) to represent <a href="https://en.wikipedia.org/wiki/Gamma_function">Euler's gamma function</a>.</p>
+<p>and sum the momentum terms over every single particle in the box.  According to our original reasoning, because we have a sum over squared terms, this equation represents a hypersphere in \( 3N \) dimensions with a radius of \( \sqrt{2mE} \).  We can now use this handy equation to calculate the hypervolume contained inside a \( k \)-dimensional ball.  Here, we use the symbol \( \Gamma \) to represent <a href="https://en.wikipedia.org/wiki/Gamma_function">Euler's gamma function</a>.</p>
 
 <p>\[ V = \frac{\pi^{k/2}}{\Gamma(\frac{k}{2} + 1)} R^k \]</p>
 
@@ -63,9 +67,15 @@
 
 <p>\[ \Omega := \frac{\partial}{\partial E} \int_S \, dV \]</p>
 
-<p>we can substitute known values and differentiate to obtain a final result.</p>
+<p>we can break up our differential hyper-volume element into \( 6N \) variables... \( 3N \) for the position of \( N \) particles, and \( 3N \) for the momentum of \( N \) particles.</p>
 
-<p>\[ \begin{align*} \Omega &= \frac{\partial}{\partial E} \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} V E^{3N/2} \\ &= \frac{3N}{2} \frac{(2 \pi m)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} V E^{3N/2 - 1} \end{align*} \]</p>
+<p>\[ \Omega := \frac{\partial}{\partial E} \int_S \, dp_{1x} dp_{1y} dp_{1z} \cdots dx_1 dy_1 dz_1 \cdots \]</p>
+
+<p>\[ \therefore \Omega = \frac{\partial}{\partial E} V^N \int_S \, dp_{1x} dp_{1y} dp_{1z} \cdots \]</p>
+
+<p>We can now substitute known values and differentiate to obtain a final result.</p>
+
+<p>\[ \begin{align*} \Omega &= \frac{\partial}{\partial E} \frac{(2 \pi)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} m^{3N/2} V E^{3N/2} \\ &= \frac{3N}{2} \frac{(2 \pi m)^{3N/2}}{\Gamma(\frac{3N}{2} + 1)} V^N E^{3N/2 - 1} \end{align*} \]</p>
 
 <p>This is the density of states equation for \( N \) particles in a box!  It can be easily shown that this is equivalent to our original result when \( N = 1 \).</p></body>
 
