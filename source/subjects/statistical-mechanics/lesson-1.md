@@ -28,35 +28,27 @@ Another very common macrostate variable is _volume_.  The volume of a cube with 
 
 \[ V = L^3 . \]
 
-Our next question is quite unusual, but its answer forms the foundation of all statistical mechanics.  For a given macrostate (energy \( E \) and volume \( V \)), what is the probability that the system is in a specific microstate?
+Our next question is quite unusual, but its answer forms the foundation of all statistical mechanics.  For a given macrostate (energy \( E \) and volume \( V \)), how many possible microstates can the system be in?
 
-This seems on the surface to be an impossible question to answer.  There are an uncountably infinite number of possible microstates, and therefore each one has zero probability.  So let's rephrase our question... given a specific macrostate, what is the probability _density_ of a specific microstate?
+This is, of course, an impossible question to answer.  There are an uncountably infinite number of possible microstates!  But it turns out to be extraordinarily useful to quantify, in some way, "how many" microstates are available that correspond to a given macrostate.
 
-## The Fundamental Postulate
+## Phase Space
 
-To answer this question, we will need to understand the _fundamental postulate of statistical mechanics_.  The fundamental postulate states that, for an isolated system in equilibrium, every possible microstate is equally likely.  We refer to this as a postulate because it does not come from any experimental evidence or rational justification... it simply seems like a good guess, and scientists are pretty confident in it because it leads to reasonable results.
-
-Mathematically, we can express the postulate by thinking of each microstate as a point in a six-dimensional _phase space_.  Consider a six-dimensional space in which every dimension represents a microscopic variable.  This allows us to represent the X, Y, and Z coordinates and X, Y, and Z momenta independently.  For reasons that will become clear shortly, we'll focus on the range of energies between zero and \( E \).  If we allow energies between zero and \( E \) and we fix the volume at \( V \), there will be constraints on which microstates are _accessible_.  Considering only the momenta in a three-dimensional space,
+To answer this question, we will need to understand the concept of _phase space_.  Consider a six-dimensional space in which every dimension represents a microscopic variable.  This allows us to represent the X, Y, and Z coordinates and X, Y, and Z momenta independently.  This is what we call phase space.  For reasons that will become clear shortly, we'll focus on determining the (hyper)volume of phase space that corresponds to the range of energies between zero and \( E \).  If we allow energies between zero and \( E \) and we fix the volume at \( V \), there will be constraints on which microstates are _accessible_ in this phase space.  Considering only the momenta in a three-dimensional space,
 
 \[ \begin{align*} E &= \frac{1}{2m} (p_x^2 + p_y^2 + p_z^2) \\ 2 m E &= p_x^2 + p_y^2 + p_z^2 \end{align*} \]
 
 we see that \( p_x, p_y, p_z \) must lie inside a ball with radius \( \sqrt{2mE} \).  Considering only the positions in a three-dimensional space,
 
-\[ V = L^3 \]
+\[ V = L^3 . \]
 
-we see that \( x, y, z \) must _also_ lie inside a cube with side length \( L \).  Let's call the accessible region \( S \) and the probability density of a given microstate \( p \).  The fundamental postulate of statistical mechanics tells us that
+Because we can consider momenta and positions independent, we can now write the accessible hypervolume of phase space corresponding to energies between zero and \( E \) as
 
-\[ \int_S p \, dV = p \int_S \, dV . \]
-
-In other words, \( p \) is a constant value across \( S \).  But not just any value... we can actually compute it!  Probability density functions, by their definition, need to integrate to one across all of space.  Because \( p \) is only nonzero inside of \( S \), we can write
-
-\[ \begin{align*} \int_S p \, dV &= p \int_S \, dV = 1 \\ \therefore p &= \frac{1}{\int_S \, dV} . \end{align*} \]
-
-This gives us an explicit expression for the probability density of any given microstate.  So we're almost done?
+\[ \int_S \, dp_x \, dp_y \, dp_z \, dx \, dy \, dz = \int_S \, dp_x \, dp_y \, dp_z \, dx \, dy \, dz . \]
 
 ## Density of States
 
-Not quite.  We took that integral above over all accessible microstates with energies _between_ zero and \( E \).  We did this so that our result would work out to a six-dimensional volume, which happens to make the mathematics a bit easier.  But that isn't quite what we want, now is it?  What we should have done is measured the accessible microstates with energies of _exactly_ \( E \).  It turns out a good way to approach this is differentiating the volume of \( S \) with respect to \( E \).  Conceptually, taking a derivative takes a measurement of the space between \( E \) and \( E + dE \) as \( dE \) gets extremely small.  Let's define this result as \( \Omega \).
+We now have an integral over all accessible microstates with energies _between_ zero and \( E \).  However, what we want to do is measure the accessible microstates with energies of _exactly_ \( E \).  It turns out a good way to approach this is differentiating the volume of \( S \) with respect to \( E \).  Conceptually, taking a derivative takes a measurement of the space between \( E \) and \( E + dE \) as \( dE \) gets extremely small, so it's easy to see why this works.  Let's define this result as \( \Omega \).
 
 \[ \Omega := \frac{\partial}{\partial E} \int_S \, dV \]
 
@@ -83,3 +75,5 @@ Last step!  Let's differentiate with respect to total energy.
 Very interesting!  It would seem that, as we add energy to this system, the number of possible states in which it can exist increases with the square root of energy.  The proportionality factors out front will end up not mattering in the near future... what's critical here is that the density of states is proportional to the square root of energy for one particle.
 
 In review, the density of states function is the _derivative_ with respect to _total energy_ of the volume of phase space contained by \( 0 \le \frac{1}{2m} \sum_i p_i^2 \le E \).  That's a lot to think about!  A non-rigorous but perfectly acceptable way to think about the density of states is as a "number" of accessible microstates, even though the density of states doesn't always evaluate to an integer.  In the next lesson, we'll extend our reasoning here to \( N \) particles in a box!
+
+[Next Lesson](./lesson-1)
