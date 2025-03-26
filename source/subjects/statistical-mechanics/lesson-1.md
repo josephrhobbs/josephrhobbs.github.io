@@ -44,7 +44,7 @@ we see that \( p_x, p_y, p_z \) must lie inside a ball with radius \( \sqrt{2mE}
 
 Because we can consider momenta and positions independent, we can now write the accessible hypervolume of phase space corresponding to energies between zero and \( E \) as
 
-\[ \int_S \, dp_x \, dp_y \, dp_z \, dx \, dy \, dz = \int_S \, dp_x \, dp_y \, dp_z \, dx \, dy \, dz . \]
+\[ \int_S \, dp_x \, dp_y \, dp_z \, dx \, dy \, dz . \]
 
 ## Density of States
 
