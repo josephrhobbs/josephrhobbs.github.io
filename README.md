@@ -29,7 +29,7 @@ More information coming soon!
 - [ ] Machine Learning
 - [ ] Theory of Computation
 
-### Fundamentals
+### Fundamentals of STEM
 
 - [ ] Single-Variable Calculus
 - [ ] Multivariable Calculus
