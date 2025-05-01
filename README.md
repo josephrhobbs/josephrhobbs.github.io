@@ -13,6 +13,7 @@ More information coming soon!
 - [ ] Fluid Mechanics
 - [ ] Thermodynamics
 - [ ] Aerospace Propulsion
+- [ ] Turbomachinery
 - [ ] Electrical Engineering (Passive Focus)
 - [ ] Electronics Engineering (Active Focus)
 - [ ] Orbital Mechanics
