@@ -11,3 +11,5 @@ The lessons below assume a general familiarity with multivariable calculus and p
 [Lesson 1: How Many States?](statistical-mechanics/lesson-1)
 
 [Lesson 2: More Particles](statistical-mechanics/lesson-2)
+
+[Lesson 3: Understanding Entropy](statistical-mechanics/lesson-3)
