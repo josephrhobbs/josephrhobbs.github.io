@@ -4,4 +4,8 @@
 
 Currently, the following subjects are available.
 
-[Single-Variable Calculus](subjects/calculus)
+[Theory of Probability](subjects/probability)
+
+[Control Theory](subjects/control-theory)
+
+[Thermodynamics](subjects/thermodynamics)
