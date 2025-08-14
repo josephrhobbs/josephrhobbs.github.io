@@ -125,6 +125,42 @@
         color: var(--steelgray);
         transition: 0.8s;
     }
+
+    div.tile {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 80px);
+        min-height: 180px;
+        height: auto;
+        margin: 40px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+        background-color: var(--flamered);
+        font-size: 36px;
+        text-shadow: 0px 0px 8px black, -2px -2px 8px black, -2px 2px 8px black, 2px -2px 8px black, 2px 2px 8px black;
+        transition: 0.4s;
+        font-weight: 600;
+    }
+
+    .tile div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0px;
+    }
+
+    div.tile:hover {
+        transition: 0.4s;
+        background-color: var(--steelgray);
+    }
+
+    div.tile .desc {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-device-width: 768px) {
@@ -187,7 +223,7 @@
     }
 
     div.menu a {
-        margin: 8px 16px;
+        margin: 8px 30px;
         padding: 12px 24px;
         border-radius: 24px;
         text-decoration: none;
