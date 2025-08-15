@@ -16,12 +16,13 @@ More information coming soon!
 - [ ] Turbomachinery
 - [ ] Electrical Engineering (Passive Focus)
 - [ ] Electronics Engineering (Active Focus)
-- [ ] Orbital Mechanics
 - [ ] Computer Hardware Engineering
+- [ ] Orbital Mechanics
 
 ### Applied Mathematics
 
 - [ ] Control Theory
+- [ ] Signal Processing
 - [ ] Probability and Inference
 - [ ] Statistical Mechanics
 - [ ] Numerical Methods
