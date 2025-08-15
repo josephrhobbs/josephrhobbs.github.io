@@ -4,4 +4,4 @@
 
 Currently, the following subjects are available.
 
-[Single-Variable Calculus](subjects/calculus)
+::tile[Single-Variable Calculus][Differential and Integral Calculus][subjects/calculus][ ]
