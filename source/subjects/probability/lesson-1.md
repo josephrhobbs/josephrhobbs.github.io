@@ -50,7 +50,7 @@ The first axiom is the Axiom of Non-Negativity.  This axiom states
 
 \[ \forall A . \mathbb{P}(A) \ge 0 . \]
 
-That looks like a lot, but it actually makes a very simple statement.  The symbol \( \forall A \), for those unfamiliar, is read as "for all A".  Therefore, we read this axiom in English as "for all A, the probability of A is greater than or equal to zero".  In other words, a probability can never be negative.  We establish this axiom by intuition... what would a negative probability even _mean_?
+The symbol \( \forall A \), for those unfamiliar, is read as "for all A".  Therefore, we read this axiom in English as "for all A, the probability of A is greater than or equal to zero".  In other words, a probability can never be negative.  We establish this axiom by intuition... what would a negative probability even _mean_?
 
 ### Axiom of Normalization
 
@@ -64,6 +64,14 @@ In English, "the probability of the sample space is one."  This means that _an o
 
 The third axiom is the Axiom of Additivity.  This one looks a bit more complicated to write, but means something very simple and intuitive.  It states
 
-\[ \begin{align*} \forall A, B . & A \cap B = \emptyset \\ & \rightarrow \mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) \end{align*} \]
+\[ \begin{align*} \forall A, B . & A \cap B = \emptyset \\ & \rightarrow \mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) . \end{align*} \]
 
-The right arrow \( X \rightarrow Y \) is read as "X implies Y", for those unfamiliar, though it can also be validly interpreted as "if X, then Y".  In English, our third axiom reads "for all A and B, if the intersection of A and B is empty (they share no elements), then the probability of their union is the sum of their probabilities".  If two events (sets of outcomes) share no elements, then the probability of the combination of those sets is equal to the sum of their individual probabilities.  Let's go back to your friend, who's thinking of an integer.  Say event A is "the integer is greater than 10" and event B is "the integer is less than 3".  There are no integers that satisfy both of these conditions, so we can confidently say \( A \cap B = \emptyset \), and therefore the probability of A or B is equal to the sum of their individual probabilities.
+The right arrow \( X \rightarrow Y \) is read as "X implies Y", for those unfamiliar, though it can also be validly interpreted as "if X, then Y".  In English, our third axiom reads "for all A and B, if the intersection of A and B is empty (they share no elements), then the probability of their union is the sum of their probabilities".  If two events (sets of outcomes) share no elements, then the probability of the combination of those sets is equal to the sum of their individual probabilities.  Let's go back to your friend, who's thinking of an integer.  Say event A is "the integer is greater than 10" and event B is "the integer is less than 3".  There are no integers that satisfy both of these conditions, so we can confidently say \( A \cap B = \emptyset \), and therefore the probability of A _or_ B occurring is equal to the sum of the probabilities of A and B.
+
+## Proofs from the Axioms
+
+The axioms of probability allow us to make some very powerful conclusions.  Firstly, let's prove that probability can never be greater than one by contradiction.  We will use the notation \( X^c \) (read as "X complement") to mean "the set of every element in \( \Omega \) that is not in X".  Assume \( \mathbb{P}(X) > 1 \).
+
+\[ \begin{align*} & \mathbb{P}(X) + \mathbb{P}(X^c) \\ & = \mathbb{P}(X \cup X^c) \text{(additivity)} \\ & = \mathbb{P}(\Omega) \text{(definition of complement)} \\ & = 1 \text{(normalization)} \\ & \rightarrow \mathbb{P}(X^c) = 1 - \mathbb{P}(X) < 0 \text{(violation of non-negativity)} \end{align*} \]
+
+As you can see, we've violated the axiom of non-negativity by having a probability greater than one, and so we must conclude our initial assumption was false and that no probability can be greater than one.
