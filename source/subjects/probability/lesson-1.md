@@ -70,7 +70,7 @@ The right arrow \( X \rightarrow Y \) is read as "X implies Y", for those unfami
 
 ## Proofs from the Axioms
 
-The axioms of probability allow us to make some very powerful conclusions.  Firstly, let's prove that probability can never be greater than one by contradiction.  We will use the notation \( X^c \) (read as "X complement") to mean "the set of every element in \( \Omega \) that is not in X".  Assume \( \mathbb{P}(X) > 1 \).
+The axioms of probability allow us to make some very powerful conclusions.  Firstly, let's prove that probability can never be greater than one by contradiction.  We will use the notation \( X^c \) (read as "X complement") to mean "the set of every outcome in \( \Omega \) that is not in X".  Assume \( \mathbb{P}(X) > 1 \).
 
 \[ \begin{align*} & \mathbb{P}(X) + \mathbb{P}(X^c) \\ & = \mathbb{P}(X \cup X^c) \text{ (additivity)} \\ & = \mathbb{P}(\Omega) \text{ (definition of complement)} \\ & = 1 \text{ (normalization)} \\ & \rightarrow \mathbb{P}(X^c) = 1 - \mathbb{P}(X) < 0 \text{ (non-negativity violated)} \end{align*} \]
 
