@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q07DLQXV96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q07DLQXV96');
+</script>
+
+<title>Lesson 1 | Blaze</title>
+
+<link rel="stylesheet" href="/style.css">
+
+<link href="/prism.css" rel="stylesheet" />
+<script src="/prism.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+
+<body>
+
+<h1>Lesson 1: What Are the Chances?</h1>
+
+<div class="menu">
+
+<a href="/">Home</a>
+
+<a href="/about">About</a>
+
+<a href="/subjects">Subjects</a>
+
+<a href="/blog">Blog</a>
+
+<a href="/contact">Contact</a>
+
+</div>
+
+
+
+<p>When was the last time you used a probability to describe an event?  We all use probability so frequently that you <em>probably</em> can't even remember.  For example, you might have wondered if it would rain tomorrow, so you checked the weather forecast.  But the forecast won't give you a straight answer, because meteorologists have no idea whether it will rain tomorrow or not!  Instead, it told you there was a certain <em>probability</em> of rain tomorrow.  But what does it mean if there's a 25 percent chance of rain tomorrow?</p>
+
+<p>We all understand probability intuitively, but when we go to express what it actually <em>is</em>, we start to struggle.  We often describe probability as "X percent of the time".  This makes sense when describing a repeatable experiment, such as a coin toss.  If you toss a coin 100 times, it will probably land heads about 50 times, so "50 percent of the time it lands heads" (or "in 50 percent of experiments it lands heads") is an accurate description.  But the sentence "25 percent of the time it will rain tomorrow" is utter nonsense... it's either going to rain, or it's not.  More importantly, tomorrow will only happen once, and "tomorrow" is not a repeatable experiment in the same way that a coin toss is.</p>
+
+<p>As we embark on this journey through the theory of probability, it's important to remember that probability <em>per se</em> doesn't have a rigorous mathematical definition.  Instead, we'll talk about probability in terms of its properties.  Let's begin by defining some important terminology that we'll be making extensive use of shortly.</p>
+
+<h2>Outcomes and the Sample Space</h2>
+
+<p>Whenever we use probability, we always begin by defining clearly our <em>sample space</em>.  The sample space is a set containing all possible <em>outcomes</em>.  An outcome \( \omega \) is a measurable, quantifiable result from an experiment or observation.  The sample space \( \Omega \) is a set containing every possible outcome \( \omega \).  It's very important that in the sample space, outcomes are <em>mutually exclusive</em> of one another and <em>collectively exhaustive</em> of the sample space.  In other words, the outcomes must be defined in such a way that <em>one</em> and <em>exactly one</em> outcome always occurs.  For example, in a weather forecast, the following sample space is valid.</p>
+
+<p>\[ \Omega = \{ \text{rain}, \text{no rain} \} \]</p>
+
+<p>This is a valid sample space, because the outcomes "rain" and "no rain" are mutually exclusive (they can't both happen) and collectively exhaustive (one outcome must happen).  In contrast, the following sample space is not valid.  Can you see why?</p>
+
+<p>\[ \Omega = \{ \text{rain}, \text{cloudy} \} \]</p>
+
+<p>This is not a valid sample space because it might rain <em>and</em> be cloudy (not mutually exclusive) or it might not rain and not be cloudy (not collectively exhaustive).  Note that sample spaces can be infinitely large, as long as the two conditions are satisfied.  For example, imagine that you ask your friend to think of an integer.  The sample space here is</p>
+
+<p>\[ \Omega = \mathbb{Z} = \{ \cdots, -3, -2, -1, 0, 1, 2, 3, \cdots \} . \]</p>
+
+<p>This sample space is infinitely large, but it's still a valid sample space.  All outcomes are mutually exclusive (you asked your friend to think of only one number) and collectively exhaustive (the sample space contains every possible integer).</p>
+
+<h2>Probability</h2>
+
+<p>Probability is defined as a <em>function</em>, denoted \( \mathbb{P}(\cdot) \), mapping subsets of \( \Omega \) to positive real numbers.  Here, and throughout our journey, we'll use the dot symbol \( \cdot \) as a simple placeholder for another symbol.  Mathematically, we write</p>
+
+<p>\[ \mathbb{P} : \mathcal{P}(\Omega) \rightarrow \mathbb{R} . \]</p>
+
+<p>The notation \( \mathcal{P}(\cdot) \) indicates the <em>power set</em> operation.  The power set of a set \( \Omega \) is the set containing <em>all possible subsets</em> of \( \Omega \).  In a simple example, consider our previous sample space.</p>
+
+<p>\[ \Omega = \{ \text{rain}, \text{no rain} \} \]</p>
+
+<p>The power set of \( \Omega \) contains every possible subset of \( \Omega \).</p>
+
+<p>\[ \begin{align*} \mathcal{P}(\Omega) = \{ \{  \}, \{ \text{no rain} \}, \{ \text{no rain} \}, \{ \text{rain}, \text{no rain} \} \} \end{align*} \]</p>
+
+<p>Note that \( \mathcal{P}(\Omega) \) includes the null set \( \emptyset = \{ \} \) because this too is a subset of \( \Omega \) (and every other set, except the null set).  As discussed previously, there's no rigorous definition of what probability <em>means</em>... it is simply defined as a function mapping elements of \( \mathcal{P} \) to real numbers in \( \mathbb{R} \).</p></body>
+
+</html>
